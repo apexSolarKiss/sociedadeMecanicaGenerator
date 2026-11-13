@@ -136,7 +136,7 @@ const addMetadata = (_dna, _edition) => {
     date: dateTime,
     ...extraMetadata,
     attributes: attributesList,
-    compiler: "HashLips Art Engine",
+    copyright: "bunda labs",
   };
   if (network == NETWORK.sol) {
     tempMetadata = {
