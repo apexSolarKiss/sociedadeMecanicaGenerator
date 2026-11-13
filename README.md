@@ -1,3 +1,46 @@
+# sociedadeMecanicaGenerator
+
+The avatar generator of [sociedade mecânica de futebol](https://a-s-k.studio/apex-solar-kiss/sociedade) (2022): the HashLips Art Engine, configured by ASK for the project's commissioned component library. Recovered into this fork in 2026 as historical source.
+
+> **Historical source, not a working demo.** The component-art layers are not included. The recovered configuration also expects five layer families that are not in the working copy this recovery used, so this edition cannot reproduce the original run. The avatar collection never launched.
+
+## What is here
+
+Branch `sociedade-mecanica` is the HashLips Art Engine at tag [`v1.1.2_patch_v1`](https://github.com/HashLips/hashlips_art_engine/tree/v1.1.2_patch_v1) plus two commits:
+
+1. **The 2022 changes**, imported from the studio's working copy, which had no Git history:
+   - `src/config.js` holds the layer grammar: four layer configurations (small hats, big hats, fire + small hats, fire + big hats); 400 avatars at 2160 × 2160; hat families weighted 3:1; a 5% fire subset; eight stacked `pichações` (graffiti) layers; and `nomes` (name tags) and `fundo` (background) left out of the uniqueness check.
+   - `src/main.js` writes `copyright: "bunda labs"` into generated metadata where HashLips writes `compiler: "HashLips Art Engine"`. This is the 2022 setting, kept as found. It does not license the generated art or establish who owns it now.
+   - `package.json` adds `yarn`. The two lockfiles are from the same working copy.
+   - `smf/nomes.js` is a 2022 helper that renamed numbered name-tag images to Swedish given names. It renames files in a `nomes` folder beside the script, which here means `smf/nomes/`, not `layers/nomes/`. It is kept for reading and was not tested.
+2. **This README section.**
+
+One value changed on import: `baseUri` is set back to the upstream placeholder, `ipfs://NewUriToReplace`.
+
+`layers/`, `logo.png` and `banner.png` are HashLips' own demo files from upstream. The SMF configuration does not use them.
+
+## Before running anything
+
+- `buildSetup()` deletes the `build/` folder recursively at the start of every run.
+- Generation uses unseeded randomness and timestamps, so a run cannot be reproduced.
+- Dependencies are the 2022 versions. They have not been updated or audited.
+
+## Credits
+
+- engine >> [HashLips Art Engine](https://github.com/HashLips/hashlips_art_engine)
+- avatar creative direction >> Alex Limpo de Abreu
+- CTO + generative avatar system development >> ASK
+- avatar illustration >> P R Soliver
+- avatar styling >> Antônio Frajado
+
+## License
+
+MIT, as in [`LICENSE`](LICENSE) (Copyright (c) 2021 HashLips). ASK's changes on this branch are offered under the same license. The license covers this code only. No SMF artwork is included or licensed.
+
+---
+
+*The original HashLips README follows.*
+
 # Welcome to HashLips 👄
 
 ![](https://github.com/HashLips/hashlips_art_engine/blob/main/logo.png)
