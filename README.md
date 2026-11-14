@@ -4,11 +4,11 @@
 
 The avatar generator of [sociedade mecânica de futebol](https://a-s-k.studio/apex-solar-kiss/sociedade) (2022): the [HashLips Art Engine](https://github.com/HashLips/hashlips_art_engine), configured by ASK to assemble the project's robot avatars from its commissioned component library. The banner shows twelve outputs from a test compile on 2022-09-14. Recovered into this fork in 2026 as historical source.
 
-**Historical outputs >>** see the sociedade mecânica de futebol project presentation on A-S-K.studio.
+> **Historical source, not a working demo.** The component-art layers are not included. The recovered configuration also expects five layer families that are not in the working copy this recovery used, so this edition cannot reproduce the original run. The avatar collection never launched.
+
+**Historical outputs >>** see the sociedade mecânica de futebol project presentation on [A-S-K.studio](https://a-s-k.studio/apex-solar-kiss/sociedade).
 
 **Runnable geometric example >>** [shapesASK](https://github.com/apexSolarKiss/sociedadeMecanicaGenerator/tree/shapesASK)
-
-> **Historical source, not a working demo.** The component-art layers are not included. The recovered configuration also expects five layer families that are not in the working copy this recovery used, so this edition cannot reproduce the original run. The avatar collection never launched.
 
 ## What is here
 
