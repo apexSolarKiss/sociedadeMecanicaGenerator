@@ -1,6 +1,8 @@
 # sociedadeMecanicaGenerator
 
-The avatar generator of [sociedade mecânica de futebol](https://a-s-k.studio/apex-solar-kiss/sociedade) (2022): the [HashLips Art Engine](https://github.com/HashLips/hashlips_art_engine), configured by ASK to assemble the project's robot avatars from its commissioned component library. Recovered into this fork in 2026 as historical source.
+![Twelve sociedade mecânica de futebol robot avatars, output by this generator in a 2022 test compile](docs/assets/sociedade-generator-banner.png)
+
+The avatar generator of [sociedade mecânica de futebol](https://a-s-k.studio/apex-solar-kiss/sociedade) (2022): the [HashLips Art Engine](https://github.com/HashLips/hashlips_art_engine), configured by ASK to assemble the project's robot avatars from its commissioned component library. The banner shows twelve outputs from a test compile on 2022-09-14. Recovered into this fork in 2026 as historical source.
 
 **Historical outputs >>** see the sociedade mecânica de futebol project presentation on A-S-K.studio.
 
@@ -15,7 +17,7 @@ Branch `sociedade-mecanica` is the HashLips Art Engine at tag [`v1.1.2_patch_v1`
    - `src/main.js` writes `copyright: "bunda labs"` into generated metadata where HashLips writes `compiler: "HashLips Art Engine"`. This is the 2022 setting, kept as found. It does not license the generated art or establish who owns it now.
    - `package.json` adds `yarn`. The two lockfiles are from the same working copy.
    - `smf/nomes.js` is a 2022 helper that renamed numbered name-tag images to Swedish given names. It renames files in a `nomes` folder beside the script, which here means `smf/nomes/`, not `layers/nomes/`. It is kept for reading and was not tested.
-2. **This README.**
+2. **This README, its banner and [`NOTICE`](NOTICE).**
 
 One value changed on import: `baseUri` is set back to the upstream placeholder, `ipfs://NewUriToReplace`.
 
@@ -68,6 +70,6 @@ This repository is a fork of the [HashLips Art Engine](https://github.com/HashLi
 
 ## License
 
-MIT, as in [`LICENSE`](LICENSE) (Copyright (c) 2021 HashLips). ASK's code and documentation changes on this branch are offered under the same license.
+MIT, as in [`LICENSE`](LICENSE) (Copyright (c) 2021 HashLips). ASK's code and documentation changes on this branch, other than the avatar banner, are offered under the same license.
 
-No SMF production layers or other SMF artwork are included or licensed.
+No SMF production layers are included. The documentation banner and social preview are excluded from the MIT License and carry no reuse grant. See [`NOTICE`](NOTICE).
