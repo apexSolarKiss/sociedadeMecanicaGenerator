@@ -1,5 +1,7 @@
 # sociedadeMecanicaGenerator // shapesASK example
 
+![Twelve shapesASK compositions of circles, hexagons and triangles, four across and three down: the first twelve images of a 32-image run of this example, 2026-11-13](docs/assets/shapesASK-banner.png)
+
 This branch runs the [HashLips Art Engine](https://github.com/HashLips/hashlips_art_engine) on **shapesASK**, ASK's compositions of circles, hexagons and triangles. It shows the recovered engine assembling an independent layer set. The historical sociedade mecânica de futebol recovery is branch [`sociedade-mecanica`](https://github.com/apexSolarKiss/sociedadeMecanicaGenerator/tree/sociedade-mecanica), whose README documents the 2022 configuration.
 
 ## Run the example
@@ -24,6 +26,7 @@ It starts from `sociedade-mecanica` before that branch's avatar banner, and adds
   - `package-lock.json` is regenerated.
 - **`package.json`:** adds the `generate:export` script.
 - **`NOTICE`:** states which files the MIT License covers and excludes the shapesASK artwork from it.
+- **`docs/assets/shapesASK-banner.png`:** this README's banner, the first twelve images of a 32-image run of the example, four across and three down.
 
 **Unchanged:**
 
