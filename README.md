@@ -6,6 +6,8 @@ The avatar generator of [sociedade mecânica de futebol](https://a-s-k.studio/ap
 
 **Historical outputs >>** see the sociedade mecânica de futebol project presentation on A-S-K.studio.
 
+**Runnable geometric example >>** [shapesASK](https://github.com/apexSolarKiss/sociedadeMecanicaGenerator/tree/shapesASK)
+
 > **Historical source, not a working demo.** The component-art layers are not included. The recovered configuration also expects five layer families that are not in the working copy this recovery used, so this edition cannot reproduce the original run. The avatar collection never launched.
 
 ## What is here
