@@ -1,0 +1,43 @@
+{
+  "about": "shapesASK color rules. Every output has three colors: the field (also used by the aperture), the figure (outer and middle shapes) and the core. Distances are CIEDE2000 between sRGB colors (D65, kL = kC = kH = 1).",
+  "tokens": {
+    "ask-white": "#FFFFFF",
+    "ask-lavender-light": "#E2D3F0",
+    "lavender-ASK": "#D4C6E1",
+    "ask-surface": "#BFB3D4",
+    "ask-surface-hover": "#C9BCDE",
+    "ask-ui-accent-1": "#8B79A2",
+    "ask-ui-accent-2": "#AE87C2",
+    "ask-emphasis-magenta": "#FF00FF",
+    "ask-emphasis-violet": "#AA40FF",
+    "ask-emphasis-cyan": "#00BEFF"
+  },
+  "excluded_inks": {
+    "ask-ink-light": "#201D26",
+    "ask-ink-dark": "#0A090C",
+    "ask-fg-light": "#6A637F"
+  },
+  "field": {
+    "pool": ["ask-white", "ask-lavender-light", "lavender-ASK", "ask-surface-hover", "ask-surface"],
+    "choice": "uniform over the pool"
+  },
+  "figure": {
+    "pool": ["ask-white", "ask-lavender-light", "lavender-ASK", "ask-surface", "ask-surface-hover", "ask-ui-accent-1", "ask-ui-accent-2"],
+    "min_delta_e2000_vs_field": 17,
+    "choice": "uniform over the pool tokens at least the minimum distance from the field"
+  },
+  "core": {
+    "families": {
+      "ordinary": {
+        "probability": 0.85,
+        "pool": ["ask-white", "ask-lavender-light", "lavender-ASK", "ask-surface", "ask-surface-hover", "ask-ui-accent-1", "ask-ui-accent-2"]
+      },
+      "bright": {
+        "probability": 0.15,
+        "pool": ["ask-emphasis-magenta", "ask-emphasis-violet", "ask-emphasis-cyan"]
+      }
+    },
+    "min_delta_e2000_vs_field_and_figure": 15,
+    "choice": "draw the family first at its fixed probability, then choose uniformly among that family's tokens at least the minimum distance from both the field and the figure"
+  }
+}

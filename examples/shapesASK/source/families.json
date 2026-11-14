@@ -1,0 +1,337 @@
+{
+  "about": "The four shapesASK structures. Each master SVG in masters/ holds one group per HashLips layer, in drawing order; its data-role names the color slot the layer preparer fills. Geometry is shared registration at the canvas center; sizes are radii (circle) or circumradii (hexagon, triangle).",
+  "canvas": {
+    "width": 2160,
+    "height": 2160,
+    "registration": [
+      1080,
+      1080
+    ]
+  },
+  "layer_order": [
+    "field",
+    "outer",
+    "aperture",
+    "middle",
+    "core"
+  ],
+  "roles": {
+    "field": "field color",
+    "figure": "figure color",
+    "core": "core color"
+  },
+  "families": [
+    {
+      "id": "s04",
+      "master": "masters/s04.svg",
+      "nesting": "circle > [hexagon] > triangle > (hexagon)",
+      "nesting_key": "[ ] = aperture painted with the field color, ( ) = visible core",
+      "reference": {
+        "field": "ask-surface",
+        "figure": "ask-white",
+        "core": "ask-emphasis-cyan"
+      },
+      "geometry": [
+        {
+          "element": "outer",
+          "primitive": "circle",
+          "size": 640.0,
+          "size_param": "radius",
+          "pair_rule": null,
+          "ratio_to_container": null,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "aperture",
+          "primitive": "hexagon",
+          "size": 640.0,
+          "size_param": "circumradius",
+          "pair_rule": "circle->hexagon",
+          "ratio_to_container": 1.0,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "middle",
+          "primitive": "triangle",
+          "size": 640.0,
+          "size_param": "circumradius",
+          "pair_rule": "hexagon->triangle",
+          "ratio_to_container": 1.0,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "core",
+          "primitive": "hexagon",
+          "size": 320.0,
+          "size_param": "circumradius",
+          "pair_rule": "triangle->hexagon",
+          "ratio_to_container": 0.5,
+          "painted_extent_clipped_by": []
+        }
+      ],
+      "probes": [
+        {
+          "element": "field",
+          "x": 367,
+          "y": 367
+        },
+        {
+          "element": "outer",
+          "x": 483,
+          "y": 1045
+        },
+        {
+          "element": "aperture",
+          "x": 674,
+          "y": 1314
+        },
+        {
+          "element": "middle",
+          "x": 710,
+          "y": 866
+        },
+        {
+          "element": "core",
+          "x": 1079,
+          "y": 1079
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "master": "masters/s02.svg",
+      "nesting": "circle > [triangle] > hexagon > (triangle)",
+      "nesting_key": "[ ] = aperture painted with the field color, ( ) = visible core",
+      "reference": {
+        "field": "ask-lavender-light",
+        "figure": "ask-ui-accent-1",
+        "core": "ask-white"
+      },
+      "geometry": [
+        {
+          "element": "outer",
+          "primitive": "circle",
+          "size": 640.0,
+          "size_param": "radius",
+          "pair_rule": null,
+          "ratio_to_container": null,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "aperture",
+          "primitive": "triangle",
+          "size": 640.0,
+          "size_param": "circumradius",
+          "pair_rule": "circle->triangle",
+          "ratio_to_container": 1.0,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "middle",
+          "primitive": "hexagon",
+          "size": 320.0,
+          "size_param": "circumradius",
+          "pair_rule": "triangle->hexagon",
+          "ratio_to_container": 0.5,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "core",
+          "primitive": "triangle",
+          "size": 320.0,
+          "size_param": "circumradius",
+          "pair_rule": "hexagon->triangle",
+          "ratio_to_container": 1.0,
+          "painted_extent_clipped_by": []
+        }
+      ],
+      "probes": [
+        {
+          "element": "field",
+          "x": 367,
+          "y": 367
+        },
+        {
+          "element": "outer",
+          "x": 659,
+          "y": 1311
+        },
+        {
+          "element": "aperture",
+          "x": 710,
+          "y": 866
+        },
+        {
+          "element": "middle",
+          "x": 877,
+          "y": 1197
+        },
+        {
+          "element": "core",
+          "x": 1079,
+          "y": 1079
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "master": "masters/s08.svg",
+      "nesting": "hexagon > [circle] > triangle > (clipped circle)",
+      "nesting_key": "[ ] = aperture painted with the field color, ( ) = visible core",
+      "reference": {
+        "field": "ask-surface-hover",
+        "figure": "ask-white",
+        "core": "ask-ui-accent-2"
+      },
+      "geometry": [
+        {
+          "element": "outer",
+          "primitive": "hexagon",
+          "size": 640.0,
+          "size_param": "circumradius",
+          "pair_rule": null,
+          "ratio_to_container": null,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "aperture",
+          "primitive": "circle",
+          "size": 384.0,
+          "size_param": "radius",
+          "pair_rule": "hexagon->circle",
+          "ratio_to_container": 0.6,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "middle",
+          "primitive": "triangle",
+          "size": 384.0,
+          "size_param": "circumradius",
+          "pair_rule": "circle->triangle",
+          "ratio_to_container": 1.0,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "core",
+          "primitive": "circle",
+          "size": 230.4,
+          "size_param": "radius",
+          "pair_rule": "triangle->circle",
+          "ratio_to_container": 0.6,
+          "painted_extent_clipped_by": [
+            "middle"
+          ]
+        }
+      ],
+      "probes": [
+        {
+          "element": "field",
+          "x": 388,
+          "y": 388
+        },
+        {
+          "element": "outer",
+          "x": 1079,
+          "y": 577
+        },
+        {
+          "element": "aperture",
+          "x": 827,
+          "y": 1218
+        },
+        {
+          "element": "middle",
+          "x": 835,
+          "y": 938
+        },
+        {
+          "element": "core",
+          "x": 1079,
+          "y": 1079
+        }
+      ],
+      "construction": {
+        "element": "middle",
+        "rule": "the middle triangle is drawn with a hole (even-odd fill). The hole's straight edges are the core's three clipped edges in full; its arcs run 1.5 px inside the core's arcs. The hole lies under the opaque core, so the visible geometry is unchanged. Where the core meets the aperture, along its clipped edges, no triangle edge lies under the core's edge; along its arcs, the triangle still lies under the core's edge, as it should, because the triangle is the visible neighbor there.",
+        "core_radius": 230.4,
+        "hole_arc_radius": 228.9
+      }
+    },
+    {
+      "id": "s06",
+      "master": "masters/s06.svg",
+      "nesting": "hexagon > [triangle] > circle > (triangle)",
+      "nesting_key": "[ ] = aperture painted with the field color, ( ) = visible core",
+      "reference": {
+        "field": "ask-surface",
+        "figure": "ask-white",
+        "core": "ask-emphasis-violet"
+      },
+      "geometry": [
+        {
+          "element": "outer",
+          "primitive": "hexagon",
+          "size": 640.0,
+          "size_param": "circumradius",
+          "pair_rule": null,
+          "ratio_to_container": null,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "aperture",
+          "primitive": "triangle",
+          "size": 640.0,
+          "size_param": "circumradius",
+          "pair_rule": "hexagon->triangle",
+          "ratio_to_container": 1.0,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "middle",
+          "primitive": "circle",
+          "size": 384.0,
+          "size_param": "radius",
+          "pair_rule": "triangle->circle",
+          "ratio_to_container": 0.6,
+          "painted_extent_clipped_by": []
+        },
+        {
+          "element": "core",
+          "primitive": "triangle",
+          "size": 384.0,
+          "size_param": "circumradius",
+          "pair_rule": "circle->triangle",
+          "ratio_to_container": 1.0,
+          "painted_extent_clipped_by": []
+        }
+      ],
+      "probes": [
+        {
+          "element": "field",
+          "x": 388,
+          "y": 388
+        },
+        {
+          "element": "outer",
+          "x": 674,
+          "y": 1314
+        },
+        {
+          "element": "aperture",
+          "x": 673,
+          "y": 845
+        },
+        {
+          "element": "middle",
+          "x": 794,
+          "y": 1097
+        },
+        {
+          "element": "core",
+          "x": 1079,
+          "y": 1079
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+sociedadeMecanicaGenerator // shapesASK branch
+
+Code under the MIT License
+
+The MIT License in LICENSE (Copyright (c) 2021 HashLips) covers the HashLips
+Art Engine. ASK's shapesASK additions on this branch are made available under
+the same MIT License terms:
+
+- the shapesASK code: examples/shapesASK/generate-export.js and
+  examples/shapesASK/lib/;
+- the rules and configuration: examples/shapesASK/rules/palette.json and
+  examples/shapesASK/source/families.json;
+- the documentation: README.md and examples/shapesASK/README.md.
+
+Artwork excluded from the MIT License
+
+The shapesASK artwork is excluded from the MIT License:
+
+- the masters, examples/shapesASK/source/masters/*.svg;
+- every image the example generates, including the reference compositions;
+- contact sheets and other visual derivatives of the masters or of the
+  generated images.
+
+No reuse license to that artwork is granted by this repository.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="2160" viewBox="0 0 2160 2160">
+  <!-- shapesASK example master s04. One group per layer; data-role names the color slot the layer preparer fills (field, figure or core). Colors shown are the fixed reference recipe. -->
+  <g id="field" data-role="field" data-shape="field"><rect x="0" y="0" width="2160" height="2160" fill="#BFB3D4"/></g>
+  <g id="outer" data-role="figure" data-shape="circle"><circle cx="1080" cy="1080" r="640" fill="#FFFFFF"/></g>
+  <g id="aperture" data-role="field" data-shape="hexagon"><polygon points="1080,1720 525.7437,1400 525.7437,760 1080,440 1634.2563,760 1634.2563,1400" fill="#BFB3D4"/></g>
+  <g id="middle" data-role="figure" data-shape="triangle"><polygon points="1080,1720 525.7437,760 1634.2563,760" fill="#FFFFFF"/></g>
+  <g id="core" data-role="core" data-shape="hexagon"><polygon points="1080,1400 802.8719,1240 802.8719,920 1080,760 1357.1281,920 1357.1281,1240" fill="#00BEFF"/></g>
+</svg>

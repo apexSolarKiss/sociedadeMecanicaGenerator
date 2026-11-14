@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="2160" viewBox="0 0 2160 2160">
+  <!-- shapesASK example master s08. One group per layer; data-role names the color slot the layer preparer fills (field, figure or core). Colors shown are the fixed reference recipe. -->
+  <g id="field" data-role="field" data-shape="field"><rect x="0" y="0" width="2160" height="2160" fill="#C9BCDE"/></g>
+  <g id="outer" data-role="figure" data-shape="hexagon"><polygon points="1080,1720 525.7437,1400 525.7437,760 1080,440 1634.2563,760 1634.2563,1400" fill="#FFFFFF"/></g>
+  <g id="aperture" data-role="field" data-shape="circle"><circle cx="1080" cy="1080" r="384" fill="#C9BCDE"/></g>
+  <g id="middle" data-role="figure" data-shape="triangle"><path d="M 1080 1464 L 747.4462 888 L 1412.5538 888 Z M 977.4023 1286.2956 L 850.0439 1065.7044 L 851.541 1065.7975 A 228.9 228.9 0 0 1 953.4708 889.25 L 952.6416 888 L 1207.3584 888 L 1206.5292 889.25 A 228.9 228.9 0 0 1 1308.459 1065.7975 L 1309.9561 1065.7044 L 1182.5977 1286.2956 L 1181.9297 1284.9525 A 228.9 228.9 0 0 1 978.0703 1284.9525 Z" fill="#FFFFFF" fill-rule="evenodd"/></g>
+  <g id="core" data-role="core" data-shape="clipped circle"><path d="M 977.4023 1286.2956 L 850.0439 1065.7044 A 230.4 230.4 0 0 1 952.6416 888 L 1207.3584 888 A 230.4 230.4 0 0 1 1309.9561 1065.7044 L 1182.5977 1286.2956 A 230.4 230.4 0 0 1 977.4023 1286.2956 Z" fill="#AE87C2"/></g>
+</svg>
