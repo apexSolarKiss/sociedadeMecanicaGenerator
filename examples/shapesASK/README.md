@@ -12,8 +12,10 @@ recipe planner >> layer preparation >> HashLips Art Engine >> validation >> expo
 
 ```bash
 npm ci
-npm run generate:export -- --count 32 --output /path/to/new-run-folder
+npm run generate -- --count 32 --output /path/to/new-run-folder
 ```
+
+`npm run generate:export` is the same command.
 
 - `--count N` sets the number of outputs.
 - `--output` names a folder that does not exist yet. It must be outside the repository and outside any other checkout of it. Its parent folder must exist. An existing destination is refused.
@@ -85,7 +87,7 @@ For one structure, the rules allow 14 field and figure pairs and 65 distinct col
 - the prepared layers;
 - a link to `node_modules/`.
 
-The repository's tracked `src/config.js` and `layers/` are neither read nor changed.
+The repository's tracked `src/config.js` is neither read nor changed.
 
 **Export folder:**
 
@@ -95,6 +97,7 @@ The repository's tracked `src/config.js` and `layers/` are neither read nor chan
 - `contact-sheet.png`.
 - `hashlips.log`.
 - `run.json` records the seed, the counts, the hashes of the rules, masters and engine files, the runtime versions and the validation summary.
+- `LICENSE` and `NOTICE`: the Apache License, Version 2.0, and the shapesASK notice, which cover the run.
 - `SHA256SUMS`.
 
 **Validation, before anything is exported:**
@@ -147,4 +150,4 @@ Node 22.12.0 on macOS 26.6 (arm64), with `canvas` 3.2.3, cairo 1.18.4 and librsv
 
 ## License
 
-The shapesASK code, `rules/palette.json`, `source/families.json` and this documentation are under the repository's MIT License. The shapesASK artwork is excluded from it, and no license to it is granted. The artwork means the masters in `source/masters/`, every image the example generates, and contact sheets and other visual derivatives of them. [`NOTICE`](../../NOTICE) sets out the scope.
+shapesASK is open source under the Apache License, Version 2.0, in [`LICENSE`](LICENSE). That covers the code, `rules/palette.json`, `source/families.json`, the masters in `source/masters/`, this documentation, and the images, metadata, recipes, contact sheets and other files the example generates. [`NOTICE`](NOTICE) is its notice. Every export made from this revision on carries both files; earlier exports, including run 01, are covered without carrying them. The HashLips Art Engine, which composites the images, stays under the repository's MIT License. The repository's [`NOTICE`](../../NOTICE) maps each file to its license.

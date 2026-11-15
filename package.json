@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "node index.js",
-    "generate": "node index.js",
+    "generate": "node examples/shapesASK/generate-export.js",
     "rarity": "node utils/rarity.js",
     "preview": "node utils/preview.js",
     "pixelate": "node utils/pixelate.js",
@@ -23,7 +23,7 @@
     "generate:export": "node examples/shapesASK/generate-export.js"
   },
   "author": "Daniel Eugene Botha (HashLips)",
-  "license": "MIT",
+  "license": "(MIT AND Apache-2.0)",
   "dependencies": {
     "canvas": "3.2.3",
     "gif-encoder-2": "^1.0.5",
