@@ -4,6 +4,12 @@
 
 This branch runs the [HashLips Art Engine](https://github.com/HashLips/hashlips_art_engine) on **shapesASK**, ASK's compositions of circles, hexagons and triangles. It shows the recovered engine assembling an independent layer set. The historical sociedade mecânica de futebol recovery is branch [`sociedade-mecanica`](https://github.com/apexSolarKiss/sociedadeMecanicaGenerator/tree/sociedade-mecanica), whose README documents the 2022 configuration.
 
+## Where are the layers?
+
+The source layers are four editable SVG masters, one per structure, in [`examples/shapesASK/source/masters/`](examples/shapesASK/source/masters/). Each master holds one group per HashLips layer: field, outer, aperture, middle and core. Each group's `data-role` names the color role that fills it: field, figure or core. [`examples/shapesASK/source/families.json`](examples/shapesASK/source/families.json) records the layer order, the color roles and each structure's geometry.
+
+`npm run generate` renders each group as a PNG layer in every color the run needs, and HashLips composites those layers. They are written to `build/shapesASK/engine/layers/`, inside a workspace that Git ignores and every run recreates. Generated layers are intentionally not committed, so the branch has no `layers/` folder.
+
 ## Run the example
 
 ```bash
@@ -12,8 +18,6 @@ npm run generate -- --count 32 --output /path/to/new-run-folder
 ```
 
 `npm run generate:export` is the same command. `.nvmrc` names the tested Node version. [`examples/shapesASK/README.md`](examples/shapesASK/README.md) covers the options, the color rules and what a run writes.
-
-The source layers are the example's four editable SVG masters in [`examples/shapesASK/source/masters/`](examples/shapesASK/source/masters/), one group per layer. Each run prepares its PNG layers from them, so the branch has no `layers/` folder.
 
 ## What this branch changes
 
