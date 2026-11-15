@@ -140,3 +140,8 @@ dist
 # OSX
 
 .DS_Store
+
+# sociedade mecânica de futebol: the production layers are not published.
+# Restored component art stays local; only each family's .gitkeep is tracked.
+/layers/*/*
+!/layers/*/.gitkeep

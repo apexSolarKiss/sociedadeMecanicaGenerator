@@ -1,0 +1,11 @@
+{
+  "inventory": "unresolved",
+  "scope": "The five families src/config.js names that are not in the working copy. Until their production files are found, the last configuration cannot be restored in full, and its weights for these families are not established.",
+  "families": [
+    {"family": "antena B", "status": "Not in the working copy. Found only in the compile-ask supplement, a different source set, in two different versions."},
+    {"family": "boca B", "status": "Not in the working copy. Found only in the compile-ask supplement, a different source set, in three different versions."},
+    {"family": "chápeu B", "status": "Not in the working copy. Found only in the compile-ask supplement, a different source set, in three different versions."},
+    {"family": "camisa queimando", "status": "Not in the working copy or the six compile folders. No other location was searched."},
+    {"family": "superaquecimento", "status": "Not in the working copy or the six compile folders. No other location was searched."}
+  ]
+}
