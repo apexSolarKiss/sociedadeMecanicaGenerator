@@ -2,8 +2,10 @@
 "use strict";
 // shapesASK: plan >> prepare layers >> HashLips >> validate >> export.
 //
-//   npm run generate:export -- --count 32 --output /path/to/new-run-folder [--seed TEXT]
-//   npm run generate:export -- --references --output /path/to/new-run-folder
+//   npm run generate -- --count 32 --output /path/to/new-run-folder [--seed TEXT]
+//   npm run generate -- --references --output /path/to/new-run-folder
+//
+// npm run generate:export is the same command.
 //
 // Generation happens only inside the Git-ignored build/shapesASK/ workspace.
 // The export goes to a new folder outside every checkout of this repository;
@@ -98,7 +100,7 @@ function repositoryRoots() {
 // spelling of the same path (letter case, a firmlink, a symbolic link) is caught.
 function checkDestination(output) {
   // npm runs scripts from the package root; INIT_CWD is where npm was started.
-  const npmStarted = process.env.npm_lifecycle_event === "generate:export" && process.env.INIT_CWD;
+  const npmStarted = ["generate", "generate:export"].includes(process.env.npm_lifecycle_event) && process.env.INIT_CWD;
   const dest = path.resolve(npmStarted ? process.env.INIT_CWD : process.cwd(), output);
   if (engine.lstatOrNull(dest)) throw new RefusedError(`destination already exists, refusing to write: ${dest}`);
   const parent = path.dirname(dest);
@@ -246,6 +248,8 @@ async function generateAndExport({ dest, shown, palette, families, plan }) {
   }
   await contactSheet(buildDir, plan, path.join(stage, "contact-sheet.png"));
   fs.writeFileSync(path.join(stage, "hashlips.log"), run.stdout); // the engine's own report; stderr stays in the workspace
+  // The run's license record: the example's Apache License text and its notice.
+  for (const f of ["LICENSE", "NOTICE"]) fs.copyFileSync(path.join(__dirname, f), path.join(stage, f), fs.constants.COPYFILE_EXCL);
   const counts = { ordinary: 0, bright: 0 };
   for (const r of plan.recipes) counts[r.core_family]++;
   const canvasMod = require("canvas");
@@ -330,6 +334,6 @@ main().catch((e) => {
   const usage = e instanceof UsageError;
   const known = usage || e instanceof RefusedError || e instanceof PlanError || e.refused === true;
   console.error(`shapesASK: ${known ? e.message : e.stack || e}`);
-  if (usage) console.error("usage: npm run generate:export -- --count N --output <new folder> [--seed TEXT] | --references --output <new folder>");
+  if (usage) console.error("usage: npm run generate -- --count N --output <new folder> [--seed TEXT] | --references --output <new folder>");
   process.exit(usage ? 2 : 1);
 });

@@ -1,24 +1,35 @@
 sociedadeMecanicaGenerator // shapesASK branch
 
-Code under the MIT License
+This branch carries two licenses. Each file is under one of them.
 
-The MIT License in LICENSE (Copyright (c) 2021 HashLips) covers the HashLips
-Art Engine. ASK's shapesASK additions on this branch are made available under
-the same MIT License terms:
+Apache License, Version 2.0
 
-- the shapesASK code: examples/shapesASK/generate-export.js and
-  examples/shapesASK/lib/;
-- the rules and configuration: examples/shapesASK/rules/palette.json and
-  examples/shapesASK/source/families.json;
-- the documentation: README.md and examples/shapesASK/README.md.
+The shapesASK example is licensed under the Apache License, Version 2.0,
+Copyright 2026 Andrew S Klug // ASK. The license text is
+examples/shapesASK/LICENSE, and the example's notice is
+examples/shapesASK/NOTICE. The license covers:
 
-Artwork excluded from the MIT License
+- everything in examples/shapesASK/: the code, the rules and configuration,
+  the editable SVG masters and the documentation;
+- docs/assets/shapesASK-banner.png, the banner of this branch's README;
+- the images, metadata, recipes, contact sheets and other files the example
+  generates, and other visual derivatives of the masters, to the extent of
+  the rights Andrew S Klug // ASK holds in them.
 
-The shapesASK artwork is excluded from the MIT License:
+Every export made from this revision on carries the license text and the
+notice. Earlier exports, including run 01 (seed shapesASK-2026-11-13-run-01),
+are covered by the license above without carrying them.
 
-- the masters, examples/shapesASK/source/masters/*.svg;
-- every image the example generates, including the reference compositions;
-- contact sheets and other visual derivatives of the masters or of the
-  generated images.
+MIT License
 
-No reuse license to that artwork is granted by this repository.
+The HashLips Art Engine is under the MIT License in LICENSE, Copyright (c)
+2021 HashLips. ASK offers every other file on this branch under the same MIT
+terms: ASK's changes to the engine's files, src/config.js, smf/, this branch's
+README.md and the package files.
+
+Earlier revisions
+
+Earlier revisions of this branch offered the shapesASK code, rules,
+configuration and documentation under the MIT License, and those grants stand
+for those revisions. They granted no license to the shapesASK artwork; the
+Apache License above now covers it.

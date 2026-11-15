@@ -3,7 +3,7 @@
 //
 // HashLips reads src/config.js, layers/ and node_modules/ relative to its working
 // directory and deletes ./build at start. To leave the repository's tracked
-// configuration and demo layers untouched, each run gets its own engine
+// configuration untouched, each run gets its own engine
 // directory inside the Git-ignored build/shapesASK/ workspace: copies of the
 // engine files, a generated runtime config, the prepared layers, and a link to
 // the repository's node_modules. Compositing is the engine's own src/main.js.

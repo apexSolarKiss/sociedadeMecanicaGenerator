@@ -1,0 +1,16 @@
+shapesASK
+Copyright 2026 Andrew S Klug // ASK
+
+Licensed under the Apache License, Version 2.0; see LICENSE.
+
+shapesASK composes circles, hexagons and triangles from editable SVG masters
+and color rules. The license covers its code, rules, configuration, masters
+and documentation, and the images, metadata, recipes, contact sheets and
+other files it generates, and other visual derivatives of the masters, to the
+extent of the rights Andrew S Klug // ASK holds in them.
+
+The images are composited by the HashLips Art Engine
+(https://github.com/HashLips/hashlips_art_engine), Copyright (c) 2021
+HashLips, under the MIT License. The engine is not part of this work.
+
+Source: https://github.com/apexSolarKiss/sociedadeMecanicaGenerator/tree/shapesASK
