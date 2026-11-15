@@ -1,0 +1,108 @@
+{
+  "inventory": "compile-ask-supplement",
+  "source": "Six 2022 compile folders, 2022-08-13 compile ask 1 to 2022-08-13 compile ask 6: a different source set from the working copy. Their layer folders name the chassis family corpo, not chassi, so they were made with a different configuration from src/config.js. Read 2026-11-14.",
+  "scope": "Only antena B, boca B and chápeu B, three of the five families missing from the working copy. The six folders hold different sets of these files, so each distinct set is recorded once, with the folders that hold it. None of these sets is established as the one the final configuration used. Do not merge this file with working-copy.json and treat the result as one configuration.",
+  "weights": "Each weight is parsed as src/main.js parses it in getRarityWeight: the number after the last # in the file name without its four-character extension, or 1 when that is not a number.",
+  "names": "Family and file names are recorded in Unicode NFC. A family or file marked \"source_form\": \"NFD\" is stored decomposed in the source, and its exact source name is the NFD form of the recorded name. Compare names after NFC normalization.",
+  "checksums": "sha256 is the SHA-256 of the file's bytes. No image is published; only names, weights and checksums.",
+  "families": [
+    {
+      "family": "antena B",
+      "variants": [
+        {
+          "folders": ["2022-08-13 compile ask 1", "2022-08-13 compile ask 2"],
+          "assets": [
+            {"file": "brinco 1#1000.png", "weight": 1000, "sha256": "645f2f06c4488056b0d98d1a70e8192ed5cc8fae896049155d502d7d6828a285"},
+            {"file": "brinco 2#1000.png", "weight": 1000, "sha256": "b8f1e85a1b3dbc87f1657050e9fa56082ebf1de83cab2fdb0c65e0f3662b8829"},
+            {"file": "interna 1#1000.png", "weight": 1000, "sha256": "d25f077f7c63a606fb7de2394e0c504f2d47d9ef8104bedc8f34ff4b70c03bf4"},
+            {"file": "interna 3#1000.png", "weight": 1000, "sha256": "5dafcf56234be5f07c0785e9452fcb089ce1eb2cee7e0d1211891a1bf9b1227c"},
+            {"file": "leve 1#1000.png", "weight": 1000, "sha256": "a68525f840e5b13b306fcdbee661d73cb5f9a47a29fb8755fb14f5d226fa5211"},
+            {"file": "leve 2#1000.png", "weight": 1000, "sha256": "1db041c1ae65bc30d81c530fa83d3aae5b754e4c93ec5b12438931e1fefff45f"}
+          ]
+        },
+        {
+          "folders": ["2022-08-13 compile ask 3", "2022-08-13 compile ask 4", "2022-08-13 compile ask 5", "2022-08-13 compile ask 6"],
+          "assets": [
+            {"file": "brinco 2#1000.png", "weight": 1000, "sha256": "b8f1e85a1b3dbc87f1657050e9fa56082ebf1de83cab2fdb0c65e0f3662b8829"},
+            {"file": "interna 1#1000.png", "weight": 1000, "sha256": "d25f077f7c63a606fb7de2394e0c504f2d47d9ef8104bedc8f34ff4b70c03bf4"},
+            {"file": "interna 3#1000.png", "weight": 1000, "sha256": "5dafcf56234be5f07c0785e9452fcb089ce1eb2cee7e0d1211891a1bf9b1227c"},
+            {"file": "leve 1#1000.png", "weight": 1000, "sha256": "a68525f840e5b13b306fcdbee661d73cb5f9a47a29fb8755fb14f5d226fa5211"},
+            {"file": "leve 2#1000.png", "weight": 1000, "sha256": "1db041c1ae65bc30d81c530fa83d3aae5b754e4c93ec5b12438931e1fefff45f"}
+          ]
+        }
+      ]
+    },
+    {
+      "family": "boca B",
+      "variants": [
+        {
+          "folders": ["2022-08-13 compile ask 1"],
+          "assets": [
+            {"file": "grade 1#1000.png", "weight": 1000, "sha256": "7bfc6f3914ad6c97c94ba8e1f92661cfb15310ccfebfd0beaf4e87ab155a3657"},
+            {"file": "grade 2#1000.png", "weight": 1000, "sha256": "eca379417b24b8aadf707c7230491ea69e669f14b70563225f6f3c82efe1e747"},
+            {"file": "grade 3#1000.png", "weight": 1000, "sha256": "b87870882f90ec3f7a262549a4e9d9460904ed2c57960c1733b5df5e9e941293"},
+            {"file": "raiva grade 1#1000.png", "weight": 1000, "sha256": "d6dd18cc81443d08e9164bc94b49c25922cfbd05c340a773044a4c8a759675df"},
+            {"file": "sorriso grade 2#1000.png", "weight": 1000, "sha256": "026228e39c2b7b3661ce5562af2080b279336b5b83cf24b05f79174b2ebdc950"},
+            {"file": "sorriso grade 3#1000.png", "weight": 1000, "sha256": "6418756eb32990c2d93b9b67f6550c70f405d0fd63ffac40f9ad5f0d04246beb"}
+          ]
+        },
+        {
+          "folders": ["2022-08-13 compile ask 2", "2022-08-13 compile ask 3", "2022-08-13 compile ask 4"],
+          "assets": [
+            {"file": "raiva grade 1#1000.png", "weight": 1000, "sha256": "d6dd18cc81443d08e9164bc94b49c25922cfbd05c340a773044a4c8a759675df"},
+            {"file": "sorriso grade 2#1000.png", "weight": 1000, "sha256": "026228e39c2b7b3661ce5562af2080b279336b5b83cf24b05f79174b2ebdc950"},
+            {"file": "sorriso grade 3#1000.png", "weight": 1000, "sha256": "6418756eb32990c2d93b9b67f6550c70f405d0fd63ffac40f9ad5f0d04246beb"}
+          ]
+        },
+        {
+          "folders": ["2022-08-13 compile ask 5", "2022-08-13 compile ask 6"],
+          "assets": [
+            {"file": "raiva grade 1#200.png", "weight": 200, "sha256": "d6dd18cc81443d08e9164bc94b49c25922cfbd05c340a773044a4c8a759675df"},
+            {"file": "sorriso grade 2#1000.png", "weight": 1000, "sha256": "026228e39c2b7b3661ce5562af2080b279336b5b83cf24b05f79174b2ebdc950"},
+            {"file": "sorriso grade 3#1000.png", "weight": 1000, "sha256": "6418756eb32990c2d93b9b67f6550c70f405d0fd63ffac40f9ad5f0d04246beb"}
+          ]
+        }
+      ]
+    },
+    {
+      "family": "chápeu B",
+      "source_form": "NFD",
+      "variants": [
+        {
+          "folders": ["2022-08-13 compile ask 1"],
+          "assets": [
+            {"file": "pendurado branco preto#1000.png", "weight": 1000, "sha256": "f09f6b00c50d45ea091061125228dce586a3adf2a12f17ce42ef13c6935fb31c"},
+            {"file": "pendurado branco rubro#1000.png", "weight": 1000, "sha256": "6f411f2d4ecff30dba3a0594e8da7ac9e483395dead29b501cd1a3b32ec48b28"},
+            {"file": "pendurado preto rosa#1000.png", "weight": 1000, "sha256": "626a148cd1ba6ff1de413c04304ece1f78fe8f861ef3af71b84730ecdce81c1a"},
+            {"file": "pendurado preto rubro#1000.png", "weight": 1000, "sha256": "24ccabbe973304084775d19fd1a91ad87c9cd2d6f3cc9fbb1439a3a24aa6a37b"},
+            {"file": "pendurado rubro preto#1000.png", "weight": 1000, "sha256": "2eb15fb942fbaab2e9bd8c3fed487c3271a4f211665a99b14873dd5d6c78c09d"},
+            {"file": "pendurado vermelho branco#1000.png", "weight": 1000, "sha256": "db652fce24dcfafc63cabbfd6b450460973729ed161597c93aed23784d7d626f"},
+            {"file": "pescador branco vermelho#1000.png", "weight": 1000, "sha256": "d6082d8b8a700e524f20544f13071661408c7696e4de0bbdf977aa84a0915939"},
+            {"file": "pescador preto branco#1000.png", "weight": 1000, "sha256": "133b656592cc41f198f9eb4884b29ec5bbf7bd357a452d23ddf37b334e46634b"},
+            {"file": "pescador preto rubro#1000.png", "weight": 1000, "sha256": "8e2f6dc6b4c67b0eefa55ee98f29e5df08e786f3d564a51c8e2784e54d91e971"},
+            {"file": "pescador rosa preto#1000.png", "weight": 1000, "sha256": "1b0e9dadc22308cc48d56868f677fd6bf9a9c3c6cb4440b3ed942533b2679dc8"},
+            {"file": "pescador vermelho branco#1000.png", "weight": 1000, "sha256": "f5b6df8643b87299a01efff6a640887f76153dbb3da9b750e5e72eb05c371e29"},
+            {"file": "pescador vermelho preto#1000.png", "weight": 1000, "sha256": "7ce329eb97fa1fa74c718fb8e263e8b7bc7fe3d7cf641eb04c48d78a5487a75f"}
+          ]
+        },
+        {
+          "folders": ["2022-08-13 compile ask 2", "2022-08-13 compile ask 3"],
+          "assets": [
+            {"file": "pendurado branco rubro#1000.png", "weight": 1000, "sha256": "6f411f2d4ecff30dba3a0594e8da7ac9e483395dead29b501cd1a3b32ec48b28"},
+            {"file": "pendurado vermelho branco#1000.png", "weight": 1000, "sha256": "db652fce24dcfafc63cabbfd6b450460973729ed161597c93aed23784d7d626f"},
+            {"file": "pescador branco vermelho#1000.png", "weight": 1000, "sha256": "d6082d8b8a700e524f20544f13071661408c7696e4de0bbdf977aa84a0915939"},
+            {"file": "pescador vermelho branco#1000.png", "weight": 1000, "sha256": "f5b6df8643b87299a01efff6a640887f76153dbb3da9b750e5e72eb05c371e29"}
+          ]
+        },
+        {
+          "folders": ["2022-08-13 compile ask 4", "2022-08-13 compile ask 5", "2022-08-13 compile ask 6"],
+          "assets": [
+            {"file": "pendurado branco rubro#1000.png", "weight": 1000, "sha256": "6f411f2d4ecff30dba3a0594e8da7ac9e483395dead29b501cd1a3b32ec48b28"},
+            {"file": "pendurado vermelho branco#1000.png", "weight": 1000, "sha256": "db652fce24dcfafc63cabbfd6b450460973729ed161597c93aed23784d7d626f"},
+            {"file": "pescador branco vermelho#1000.png", "weight": 1000, "sha256": "d6082d8b8a700e524f20544f13071661408c7696e4de0bbdf977aa84a0915939"}
+          ]
+        }
+      ]
+    }
+  ]
+}
